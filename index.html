@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>두드림국어학원</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./common.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="./index.html"
+					><img src="./src/logo.png" alt="두드림 국어학원"
+				/></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="./story/index.html">두드림 이야기</a></li>
+					<li><a href="./timetable/index.html">시간표</a></li>
+					<li><a href="./menu3/index.html">등록 문의</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="banner">
+			<div class="slide slide_wrap">
+				<div class="slide_item item1"></div>
+				<div class="slide_item item2"></div>
+				<div
+					style="cursor: pointer"
+					onclick="location.href='./timetable/index.html';"
+					class="slide_item item3"></div>
+				<div class="slide_prev_button slide_button">
+					<span class="material-symbols-outlined">
+						chevron_left
+					</span>
+				</div>
+				<div class="slide_next_button slide_button">
+					<span class="material-symbols-outlined">
+						chevron_right
+					</span>
+				</div>
+				<ul class="slide_pagination"></ul>
+			</div>
+		</div>
+
+		<div class="content">
+			<h3>두드림 이야기</h3>
+
+			<div class="cards">
+				<div class="card" onclick="location.href='./story/index.html';">
+					<div class="card-details">
+						<p class="text-title">
+							한정 인원<br />새학기<br />특강 안내
+						</p>
+					</div>
+					<button
+						class="card-button"
+						onclick="location.href='./story/index.html';">
+						더보기
+					</button>
+				</div>
+				<div class="card" onclick="location.href='./story/index.html';">
+					<div class="card-details">
+						<p class="text-title">
+							24학년도<br />대학수학능력시험<br />고생하셨습니다
+						</p>
+					</div>
+					<button
+						class="card-button"
+						onclick="location.href='./story/index.html';">
+						더보기
+					</button>
+				</div>
+				<div class="card" onclick="location.href='./story/index.html';">
+					<div class="card-details">
+						<p class="text-title">
+							두드림 국어학원<br />웹사이트가<br />완성되었습니다
+						</p>
+					</div>
+					<button
+						class="card-button"
+						onclick="location.href='./story/index.html';">
+						더보기
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer">
+				<div class="inner global-inner">
+					<div class="footer__address">
+						<div>
+							<span>기업명 . (ㅇ)ㅇㅇㅇ</span>
+							<span
+								>주소 . 서울 강서구 강서로 289, ㅇㅇㅇㅇㅇㅇ
+							</span>
+							<span>대표자 . ㅇㅇㅇ</span>
+							<span>사업자 등록번호 . 000-00-00000</span>
+						</div>
+						<div>
+							<span>통신판매업신고 . 0000-ㅇㅇㅇㅇ-00000</span>
+							<span>등록번호 . 제00000호</span>
+							<span>개인정보관리책임자 . ㅇㅇㅇ</span>
+							<span>호스팅서비스사업자 . (ㅇ)ㅇㅇㅇㅇㅇ</span>
+						</div>
+						<div>
+							<span>고객센터 . 00-000-0000</span>
+							<span>이메일 . ooooo@ooooo.ooo</span>
+						</div>
+					</div>
+					<p class="copyright">
+						&copy;0000 <span>DoDream</span>
+						. All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

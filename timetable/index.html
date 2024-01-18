@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>두드림국어학원</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="../common.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="../index.html"
+					><img src="./src/logo.png" alt="두드림 국어학원"
+				/></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../story/index.html">두드림 이야기</a></li>
+					<li><a href="../timetable/index.html">시간표</a></li>
+					<li><a href="../menu3/index.html">등록 문의</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content">
+			<!-- 학년 선택을 위한 드롭다운 메뉴 -->
+			<div class="dropdown">
+				<select id="grade-select">
+					<option value="middle">중등부</option>
+					<option value="high1">고등학교 1학년</option>
+					<option value="high2">고등학교 2학년</option>
+					<option value="high3">고등학교 3학년</option>
+				</select>
+			</div>
+
+			<!-- 시간표 (기본적으로 숨김 처리) -->
+			<div id="middle-timetable" class="timetable" style="display: none">
+				<!-- 중등부 시간표 내용 -->
+				<table>
+					<thead>
+						<tr>
+							<th>시간</th>
+							<th>화요일</th>
+							<th>수요일</th>
+							<th>목요일</th>
+							<th>금요일</th>
+							<th>토요일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10:00 - 11:00</td>
+							<td
+								class="first-merged-cell"
+								rowspan="6"
+								colspan="4">
+								두드림 국어학원<br />중등부 시간표
+							</td>
+							<td rowspan="3">10:00~1:00</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</td>
+						</tr>
+						<tr>
+							<td>12:00 - 1:00</td>
+						</tr>
+						<tr>
+							<td>1:00 - 2:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2:00 - 3:00</td>
+							<td rowspan="3">2:00~5:00</td>
+						</tr>
+						<tr>
+							<td>3:00 - 4:00</td>
+						</tr>
+						<tr>
+							<td>4:00 - 5:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+						</tr>
+						<tr>
+							<td>5:00 - 6:00</td>
+							<td rowspan="3">5:00~8:00</td>
+						</tr>
+						<tr>
+							<td>6:00 - 7:00</td>
+						</tr>
+						<tr>
+							<td>7:00 - 8:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+						</tr>
+						<tr>
+							<td>8:00 - 9:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9:00 - 10:00</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="high1-timetable" class="timetable" style="display: none">
+				<!-- 고등학교 1학년 시간표 내용 -->
+				<table>
+					<thead>
+						<tr>
+							<th>시간</th>
+							<th>화요일</th>
+							<th>수요일</th>
+							<th>목요일</th>
+							<th>금요일</th>
+							<th>토요일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10:00 - 11:00</td>
+							<td
+								class="first-merged-cell"
+								rowspan="6"
+								colspan="4">
+								두드림 국어학원<br />고등학교1학년 시간표
+							</td>
+							<td rowspan="3">10:00~1:00</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</td>
+						</tr>
+						<tr>
+							<td>12:00 - 1:00</td>
+						</tr>
+						<tr>
+							<td>1:00 - 2:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2:00 - 3:00</td>
+							<td rowspan="3">2:00~5:00</td>
+						</tr>
+						<tr>
+							<td>3:00 - 4:00</td>
+						</tr>
+						<tr>
+							<td>4:00 - 5:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+						</tr>
+						<tr>
+							<td>5:00 - 6:00</td>
+							<td rowspan="3">5:00~8:00</td>
+						</tr>
+						<tr>
+							<td>6:00 - 7:00</td>
+						</tr>
+						<tr>
+							<td>7:00 - 8:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+						</tr>
+						<tr>
+							<td>8:00 - 9:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9:00 - 10:00</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="high2-timetable" class="timetable" style="display: none">
+				<!-- 고등학교 2학년 시간표 내용 -->
+				<table>
+					<thead>
+						<tr>
+							<th>시간</th>
+							<th>화요일</th>
+							<th>수요일</th>
+							<th>목요일</th>
+							<th>금요일</th>
+							<th>토요일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10:00 - 11:00</td>
+							<td
+								class="first-merged-cell"
+								rowspan="6"
+								colspan="4">
+								두드림 국어학원<br />고등학교2학년 시간표
+							</td>
+							<td rowspan="3">10:00~1:00</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</td>
+						</tr>
+						<tr>
+							<td>12:00 - 1:00</td>
+						</tr>
+						<tr>
+							<td>1:00 - 2:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2:00 - 3:00</td>
+							<td rowspan="3">2:00~5:00</td>
+						</tr>
+						<tr>
+							<td>3:00 - 4:00</td>
+						</tr>
+						<tr>
+							<td>4:00 - 5:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+						</tr>
+						<tr>
+							<td>5:00 - 6:00</td>
+							<td rowspan="3">5:00~8:00</td>
+						</tr>
+						<tr>
+							<td>6:00 - 7:00</td>
+						</tr>
+						<tr>
+							<td>7:00 - 8:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+						</tr>
+						<tr>
+							<td>8:00 - 9:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9:00 - 10:00</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="high3-timetable" class="timetable" style="display: none">
+				<!-- 고등학교 3학년 시간표 내용 -->
+				<table>
+					<thead>
+						<tr>
+							<th>시간</th>
+							<th>화요일</th>
+							<th>수요일</th>
+							<th>목요일</th>
+							<th>금요일</th>
+							<th>토요일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10:00 - 11:00</td>
+							<td
+								class="first-merged-cell"
+								rowspan="6"
+								colspan="4">
+								두드림 국어학원<br />고등학교3학년 시간표
+							</td>
+							<td rowspan="3">10:00~1:00</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</td>
+						</tr>
+						<tr>
+							<td>12:00 - 1:00</td>
+						</tr>
+						<tr>
+							<td>1:00 - 2:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2:00 - 3:00</td>
+							<td rowspan="3">2:00~5:00</td>
+						</tr>
+						<tr>
+							<td>3:00 - 4:00</td>
+						</tr>
+						<tr>
+							<td>4:00 - 5:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3">4:00~7:00</td>
+						</tr>
+						<tr>
+							<td>5:00 - 6:00</td>
+							<td rowspan="3">5:00~8:00</td>
+						</tr>
+						<tr>
+							<td>6:00 - 7:00</td>
+						</tr>
+						<tr>
+							<td>7:00 - 8:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3">7:00~10:00</td>
+						</tr>
+						<tr>
+							<td>8:00 - 9:00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9:00 - 10:00</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer">
+				<div class="inner global-inner">
+					<div class="footer__address">
+						<div>
+							<span>기업명 . (ㅇ)ㅇㅇㅇ</span>
+							<span
+								>주소 . 서울 강서구 강서로 289, ㅇㅇㅇㅇㅇㅇ
+							</span>
+							<span>대표자 . ㅇㅇㅇ</span>
+							<span>사업자 등록번호 . 000-00-00000</span>
+						</div>
+						<div>
+							<span>통신판매업신고 . 0000-ㅇㅇㅇㅇ-00000</span>
+							<span>등록번호 . 제00000호</span>
+							<span>개인정보관리책임자 . ㅇㅇㅇ</span>
+							<span>호스팅서비스사업자 . (ㅇ)ㅇㅇㅇㅇㅇ</span>
+						</div>
+						<div>
+							<span>고객센터 . 00-000-0000</span>
+							<span>이메일 . ooooo@ooooo.ooo</span>
+						</div>
+					</div>
+					<p class="copyright">
+						&copy;0000 <span>DoDream</span>
+						. All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
