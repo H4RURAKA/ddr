@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="../common.css" />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+		/>
 	</head>
 	<body>
 		<header>
@@ -28,18 +29,17 @@
 
 		<div class="content">
 			<!-- 학년 선택을 위한 드롭다운 메뉴 -->
+			<h1>정규수업</h1>
 			<div class="dropdown">
 				<select id="grade-select">
 					<option value="middle">중등부</option>
-					<option value="high1">고등학교 1학년</option>
-					<option value="high2">고등학교 2학년</option>
-					<option value="high3">고등학교 3학년</option>
+					<option value="high">고등부</option>
 				</select>
 			</div>
 
 			<!-- 시간표 (기본적으로 숨김 처리) -->
-			<div id="middle-timetable" class="timetable" style="display: none">
-				<!-- 중등부 시간표 내용 -->
+			<div id="middle-timetable" class="timetable">
+				<!-- 정규수업 시간표 내용 -->
 				<table>
 					<thead>
 						<tr>
@@ -57,10 +57,11 @@
 							<td
 								class="first-merged-cell"
 								rowspan="6"
-								colspan="4">
-								두드림 국어학원<br />중등부 시간표
+								colspan="4"
+							>
+								두드림 국어학원<br />중등부 정규수업 시간표
 							</td>
-							<td rowspan="3">10:00~1:00</td>
+							<td rowspan="3" class="merged">10:00~1:00</td>
 						</tr>
 						<tr>
 							<td>11:00 - 12:00</td>
@@ -74,31 +75,31 @@
 						</tr>
 						<tr>
 							<td>2:00 - 3:00</td>
-							<td rowspan="3">2:00~5:00</td>
+							<td rowspan="3" class="merged">2:00~5:00</td>
 						</tr>
 						<tr>
 							<td>3:00 - 4:00</td>
 						</tr>
 						<tr>
 							<td>4:00 - 5:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
 						</tr>
 						<tr>
 							<td>5:00 - 6:00</td>
-							<td rowspan="3">5:00~8:00</td>
+							<td rowspan="3" class="merged">5:00~8:00</td>
 						</tr>
 						<tr>
 							<td>6:00 - 7:00</td>
 						</tr>
 						<tr>
 							<td>7:00 - 8:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
 						</tr>
 						<tr>
 							<td>8:00 - 9:00</td>
@@ -111,8 +112,8 @@
 					</tbody>
 				</table>
 			</div>
-			<div id="high1-timetable" class="timetable" style="display: none">
-				<!-- 고등학교 1학년 시간표 내용 -->
+			<div id="high-timetable" class="timetable" style="display: none">
+				<!-- 정규수업 시간표 내용 -->
 				<table>
 					<thead>
 						<tr>
@@ -130,10 +131,11 @@
 							<td
 								class="first-merged-cell"
 								rowspan="6"
-								colspan="4">
-								두드림 국어학원<br />고등학교1학년 시간표
+								colspan="4"
+							>
+								두드림 국어학원<br />고등부 정규수업 시간표
 							</td>
-							<td rowspan="3">10:00~1:00</td>
+							<td rowspan="3" class="merged">10:00~1:00</td>
 						</tr>
 						<tr>
 							<td>11:00 - 12:00</td>
@@ -147,31 +149,31 @@
 						</tr>
 						<tr>
 							<td>2:00 - 3:00</td>
-							<td rowspan="3">2:00~5:00</td>
+							<td rowspan="3" class="merged">2:00~5:00</td>
 						</tr>
 						<tr>
 							<td>3:00 - 4:00</td>
 						</tr>
 						<tr>
 							<td>4:00 - 5:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
+							<td rowspan="3" class="merged">4:00~7:00</td>
 						</tr>
 						<tr>
 							<td>5:00 - 6:00</td>
-							<td rowspan="3">5:00~8:00</td>
+							<td rowspan="3" class="merged">5:00~8:00</td>
 						</tr>
 						<tr>
 							<td>6:00 - 7:00</td>
 						</tr>
 						<tr>
 							<td>7:00 - 8:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
+							<td rowspan="3" class="merged">7:00~10:00</td>
 						</tr>
 						<tr>
 							<td>8:00 - 9:00</td>
@@ -184,148 +186,176 @@
 					</tbody>
 				</table>
 			</div>
-			<div id="high2-timetable" class="timetable" style="display: none">
-				<!-- 고등학교 2학년 시간표 내용 -->
-				<table>
+
+			<div>
+				<h1>내신대비 시간표</h1>
+				<h3>1학기 중간고사</h3>
+				<table class="ns">
 					<thead>
 						<tr>
-							<th>시간</th>
-							<th>화요일</th>
-							<th>수요일</th>
-							<th>목요일</th>
-							<th>금요일</th>
-							<th>토요일</th>
+							<th>학교</th>
+							<th>수업시간 A</th>
+							<th>수업시간 B</th>
 						</tr>
 					</thead>
 					<tbody>
+						<!-- 명여 1-->
 						<tr>
-							<td>10:00 - 11:00</td>
-							<td
-								class="first-merged-cell"
-								rowspan="6"
-								colspan="4">
-								두드림 국어학원<br />고등학교2학년 시간표
+							<td>명덕여고 1</td>
+							<td>
+								월: 4시 ~ 6시 <br />
+								수 : 4시 ~ 6시 <br />
+								목 : 4시 ~ 6시
 							</td>
-							<td rowspan="3">10:00~1:00</td>
-						</tr>
-						<tr>
-							<td>11:00 - 12:00</td>
-						</tr>
-						<tr>
-							<td>12:00 - 1:00</td>
-						</tr>
-						<tr>
-							<td>1:00 - 2:00</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>2:00 - 3:00</td>
-							<td rowspan="3">2:00~5:00</td>
-						</tr>
-						<tr>
-							<td>3:00 - 4:00</td>
-						</tr>
-						<tr>
-							<td>4:00 - 5:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-						</tr>
-						<tr>
-							<td>5:00 - 6:00</td>
-							<td rowspan="3">5:00~8:00</td>
-						</tr>
-						<tr>
-							<td>6:00 - 7:00</td>
-						</tr>
-						<tr>
-							<td>7:00 - 8:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-						</tr>
-						<tr>
-							<td>8:00 - 9:00</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>9:00 - 10:00</td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div id="high3-timetable" class="timetable" style="display: none">
-				<!-- 고등학교 3학년 시간표 내용 -->
-				<table>
-					<thead>
-						<tr>
-							<th>시간</th>
-							<th>화요일</th>
-							<th>수요일</th>
-							<th>목요일</th>
-							<th>금요일</th>
-							<th>토요일</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>10:00 - 11:00</td>
-							<td
-								class="first-merged-cell"
-								rowspan="6"
-								colspan="4">
-								두드림 국어학원<br />고등학교3학년 시간표
+							<td>
+								금: 8시 ~ 10시 <br />
+								토 : 4시 ~ 6시 <br />
+								일 : 12시 ~ 2시
 							</td>
-							<td rowspan="3">10:00~1:00</td>
 						</tr>
+
+						<!-- 명여 2-->
 						<tr>
-							<td>11:00 - 12:00</td>
+							<td>명덕여고 2</td>
+							<td>
+								월: 6시 ~ 8시 <br />
+								화 : 4시 ~ 6시 <br />
+								수 : 8시 ~ 10시
+							</td>
+							<td>
+								금: 4시 ~ 6시 <br />
+								토 : 10시 ~ 12시 <br />
+								일 : 10시 ~ 12시
+							</td>
 						</tr>
+
+						<!-- 명남 1 -->
 						<tr>
-							<td>12:00 - 1:00</td>
+							<td>명덕남고 1</td>
+							<td>월 : 8시 ~ 10시 <br />화 : 5시 ~ 7시</td>
+							<td>화 : 8시 ~ 10시 <br />금 : 5시 ~ 7시</td>
 						</tr>
+
+						<!-- 명남 2-->
 						<tr>
-							<td>1:00 - 2:00</td>
-							<td></td>
+							<td>명덕남고 2</td>
+							<td>월 : 6시 ~ 8시 <br />화 : 10시 ~ 12시</td>
+							<td>금 : 8시 ~ 10시<br />토 : 10시 ~ 12시</td>
 						</tr>
+
+						<!-- 덕여 1-->
 						<tr>
-							<td>2:00 - 3:00</td>
-							<td rowspan="3">2:00~5:00</td>
+							<td>덕원여고 1</td>
+							<td>
+								월 : 8시 ~ 10시 <br />
+								화 : 6시 ~ 8시 <br />
+								수 : 6시 ~ 8시
+							</td>
+							<td>
+								금 : 6시 ~ 8시 <br />
+								토 : 2시 ~ 4시 <br />
+								일 : 2시 ~ 4시
+							</td>
 						</tr>
+
+						<!-- 덕여 2-->
 						<tr>
-							<td>3:00 - 4:00</td>
+							<td>덕원여고 2</td>
+							<td>화 : 8시 ~ 10시<br />목 : 6시 ~ 8시</td>
+							<td>토 : 12시 ~ 2시<br />일 : 5시 ~ 7시</td>
 						</tr>
+
+						<!-- 화곡 1-->
 						<tr>
-							<td>4:00 - 5:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
-							<td rowspan="3">4:00~7:00</td>
+							<td>화곡고 1</td>
+							<td>
+								화 : 8시 ~ 10시 <br />
+								수 : 6시 ~ 8시
+							</td>
+							<td>토 : 1시 ~ 3시<br />일 2시 ~ 4시</td>
 						</tr>
+
+						<!-- 화곡 2-->
 						<tr>
-							<td>5:00 - 6:00</td>
-							<td rowspan="3">5:00~8:00</td>
+							<td>화곡고 2</td>
+							<td>월 : 4시30 ~ 6시30<br />수 : 8시 ~ 10시</td>
+							<td>토 : 3시 ~ 5시</td>
 						</tr>
+
+						<!-- 마포 1-->
 						<tr>
-							<td>6:00 - 7:00</td>
+							<td>마포고 1</td>
+							<td>목 : 8시 ~ 10시<br />금 : 4시 ~ 6시</td>
+							<td>토 : 10시 ~ 12시</td>
 						</tr>
+
+						<!-- 마포 2-->
 						<tr>
-							<td>7:00 - 8:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
-							<td rowspan="3">7:00~10:00</td>
+							<td>마포고 2</td>
+							<td colspan="2">일 : 10시 ~ 1시</td>
 						</tr>
+
+						<!-- 수명 1-->
 						<tr>
-							<td>8:00 - 9:00</td>
-							<td></td>
+							<td>수명고 1</td>
+							<td>목 : 4시30 ~ 6시30</td>
+							<td>금 : 8시 ~ 10시</td>
 						</tr>
+
+						<!-- 수명 2-->
 						<tr>
-							<td>9:00 - 10:00</td>
-							<td></td>
+							<td>수명고 2</td>
+							<td colspan="2">화 : 4시 ~ 7시</td>
+						</tr>
+
+						<!-- 동양고 1-->
+						<tr>
+							<td>동양고 1</td>
+							<td colspan="2">일 : 2시 ~ 5시</td>
+						</tr>
+
+						<!-- 동양 2-->
+						<tr>
+							<td>동양고 2</td>
+							<td colspan="2">일 : 5시 ~ 8시</td>
+						</tr>
+
+						<!-- 등촌고 1-->
+						<tr>
+							<td>등촌고 1</td>
+							<td>수 : 8시 ~ 10시</td>
+							<td>토 : 2시 ~ 4시</td>
+						</tr>
+
+						<!-- 광영여고 1-->
+						<tr>
+							<td>광영여고 1</td>
+							<td colspan="2">토 : 6시 ~ 10시</td>
+						</tr>
+
+						<!-- 광영여고 2-->
+						<tr>
+							<td>광영여고 2</td>
+							<td colspan="2">일 : 5시 ~ 8시</td>
+						</tr>
+
+						<!-- 광영남고 1-->
+						<tr>
+							<td>광영남고 1</td>
+							<td>
+								화 : 8시 ~ 10시 <br />
+								수 : 8시 ~ 10시
+							</td>
+							<td>
+								토 : 10시 ~ 12시 <br />
+								일 : 10시 ~ 12시
+							</td>
+						</tr>
+
+						<!-- 경복여고 1-->
+						<tr>
+							<td>경복여고 1</td>
+							<td colspan="2">토 : 5시 ~ 8시</td>
 						</tr>
 					</tbody>
 				</table>

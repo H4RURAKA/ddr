@@ -2,7 +2,7 @@ body,
 html {
 	margin: 0;
 	padding: 0;
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	font-family: "Noto Sans KR", sans-serif;
 	font-weight: 400;
@@ -61,6 +61,7 @@ table th,
 table td {
 	padding: 8px;
 	border: 1px solid #ddd;
+	width: 100px;
 }
 
 table thead th {
@@ -76,12 +77,7 @@ table tbody tr:nth-child(even) {
 }
 
 /* 병합된 셀에 대한 추가 스타일링 */
-table td[rowspan],
-table td[colspan] {
+.merged {
 	background-color: #d8eaff; /* 병합된 셀의 배경색 */
 	font-weight: bold; /* 텍스트 강조 */
-}
-
-.timetable .first-merged-cell {
-	background-color: #f4f4f4;
 }
